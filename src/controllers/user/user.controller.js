@@ -1,7 +1,7 @@
-const { v4: uuidv4 } = require("uuid");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const User = require("../../db/models/user.model");
+import { v4 as uuidv4 } from "uuid";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+import User from "../../db/models/user.model.js";
 
 const userSignUp = async (req, res) => {
 	try {
@@ -118,4 +118,4 @@ const userController = {
 	getUser,
 };
 
-module.exports = userController;
+export default userController;
