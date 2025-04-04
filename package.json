@@ -1,5 +1,5 @@
 {
-  "name": "@pw/node-template-js",
+  "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
